@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <head>
+    <title>Code Optimizer</title>
+  </head>
+  <body>
+    <h1>Code Optimizer</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+    {% if output %}
+    <h2>Output:</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
+  </body>
+</html>
